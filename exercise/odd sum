@@ -1,10 +1,10 @@
-function oddsum(n) {
+function oddsum1(n) {
     if( n === 1) {
        return 1;
     }
     else {
-       return (n + oddsum(n-2));
+       return (n + oddsum1(n-2));
     }
 
 }
-console.log(oddsum(7));
+console.log(oddsum1(9));
